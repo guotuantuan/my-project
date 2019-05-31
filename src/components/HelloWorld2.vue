@@ -1,16 +1,25 @@
 <template>
   <div >
-    <div>1</div>
+   <div>2</div>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
+  /* eslint-disable space-in-parens */
+
+  export default {
+  name: 'HelloWorld2',
   data () {
     return {
-      msg: 'Welcome11 to Your Vue.js App'
+      msg: ''
     }
+  },
+  mounted: function () {
+    console.log('=============')
+    this.$axios.get('http://localhost:8765/hi?name=forezp').then( response => (
+      console.log(response)
+
+    ))
   }
 }
 </script>
