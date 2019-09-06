@@ -16,7 +16,7 @@
   },
   mounted: function () {
     console.log('=============')
-    this.$axios.get('http://localhost:8765/hi?name=forezp').then( response => (
+    this.$axios.get('/hello?name=forezp').then( response => (
       console.log(response)
 
     ))
