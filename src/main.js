@@ -4,11 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios'
+import 'iview/dist/styles/iview.css';
+import iView from 'iview';
 
 
+Vue.use(iView)
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios
-axios.defaults.baseURL = 'http://localhost:8765/'
+axios.defaults.baseURL = 'http://localhost:8769/'
 
 /* eslint-disable no-new */
 new Vue({
