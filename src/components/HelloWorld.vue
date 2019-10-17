@@ -1,16 +1,25 @@
 <template>
   <div >
-    <div>1</div>
+    <div>vue</div>
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'helloWorld',
   data () {
     return {
       msg: 'Welcome11 to Your Vue.js App'
     }
+  },
+  created:function () {
+    debugger
+    let url = "http://localhost:8769/api-hi/login";
+    this.$axios.get(url).then(res=>{
+//      console.log(123)
+    })
+
   }
 }
 </script>

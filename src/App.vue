@@ -1,13 +1,15 @@
 <template>
   <div class="bg" id="app">
-    <login></login>
+    <!--<login></login>-->
+    <hello-world></hello-world>
   </div>
 </template>
 
 <script>
   import Login from "./components/login/login";
+  import HelloWorld from "./components/HelloWorld";
 export default {
-  components: {Login}, name: 'App'
+  components: {HelloWorld, Login}, name: 'App'
 }
 </script>
 

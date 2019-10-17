@@ -7,11 +7,13 @@ import axios from 'axios'
 import 'iview/dist/styles/iview.css';
 import iView from 'iview';
 
-
+axios.defaults.withCredentials=true;
 Vue.use(iView)
 Vue.config.productionTip = false
 Vue.prototype.$axios = axios
-axios.defaults.baseURL = 'http://localhost:8769/'
+Vue.prototype.HOST = "/api"
+
+// axios.defaults.baseURL = 'api'
 
 /* eslint-disable no-new */
 new Vue({

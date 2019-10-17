@@ -45,7 +45,7 @@
           var self = this;
           this.loading = true;
           var data={};
-          this.$axios.post("/api-hi/login",data).then(res=>{
+          this.$axios.post("/login",data).then(res=>{
             if(res.code==200){
 
             }
@@ -57,7 +57,7 @@
           var self = this;
           this.loading2 = true;
           var data={};
-          this.$axios.post("/api-hi/test",data).then(res=>{
+          this.$axios.post("/test",data).then(res=>{
             if(res.code==200){
 
             }
@@ -66,7 +66,8 @@
 
         },
 
-    }
+    },
+
   }
 </script>
 <style>

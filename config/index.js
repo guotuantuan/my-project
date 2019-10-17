@@ -8,9 +8,18 @@ module.exports = {
   dev: {
 
     // Paths
+
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      // "/localhost":{
+      //   target:"http://localhost:8763/login",
+      //   changeOrigin:true,
+      //   pathRewrite:{
+      //     "^/localhost":""
+      //   }
+      // }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
